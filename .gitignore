@@ -1,8 +1,11 @@
 /out/
+/package-lock.json
+/resources/public/css/cake.css
 /resources/public/js/compiled/
 /target/
 /*-init.clj
 /*.log
+.*.swp
 
 # Leiningen
 /.lein-*

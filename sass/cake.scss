@@ -1,0 +1,73 @@
+// Adapted from https://github.com/manutter51/woolybear
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+$blue: #3D4B86;
+$orange: #be5725;
+$red: #ef3d3c;
+$green: #39b54a;
+$grey: #58595b;
+
+$size-1: 1.6rem;
+$size-2: 1.4rem;
+$size-3: 1.3rem;
+$size-4: 1.2rem;
+$size-5: 1.1rem;
+
+$family-sans-serif: Helvetica, Arial, sans-serif;
+
+$primary: $orange;
+
+.button {
+  font-weight: 800;
+}
+
+.wb-page-header {
+  .wb-page-title {
+    color: $orange;
+  }
+
+  .wb-padded {
+    padding-top: 2.75rem;
+  }
+
+  .image {
+    display: inline-block;
+    margin: 0 2rem 0 0;
+  }
+}
+
+.is-required-mark {
+  color: $red;
+  font-weight: bold;
+  font-size: 125%;
+  line-height: 100%;
+  position: relative;
+  left: 0.1rem;
+}
+
+.width-20 {
+  max-width: 20rem;
+}
+
+.width-50 {
+  max-width: 50% !important;
+}
+
+.caption {
+  font-size: 80%;
+  font-style: italic;
+
+}
+
+@import "bulma/sass/utilities/derived-variables";
+@import "bulma/bulma";
+
+@import "partials/buttons";
+@import "partials/effects";
+@import "partials/containers";
+@import "partials/tab-panel";
+@import "partials/forms";
+
+// load last so it gets all of the above styles
+@import "partials/ad-catalog";

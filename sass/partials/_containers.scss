@@ -1,0 +1,78 @@
+.demo-container {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid $grey;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+
+  .demo-name {
+    font-weight: 800;
+    font-size: 110%;
+    margin-bottom: 0.5rem;
+  }
+
+  .demo-display {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px dashed lighten($orange, 20%);
+    background: lighten($orange, 50%);
+  }
+
+  .wb-spoiler {
+    align-items: flex-start;
+    justify-content: left;
+    margin: 1rem;
+
+    .level-item-left {
+      margin-right: 1rem;
+
+      .wb-button {
+        font-size: 66%;
+        color: $black-ter;
+        font-weight: 400;
+      }
+    }
+
+    .level-item {
+      align-items: flex-start;
+      justify-content: left;
+
+      .wb-shy {
+        width: 100%;
+
+        .code-block {
+          border: 1px solid $grey-lighter;
+          padding: 1rem;
+          width: 100%;
+          min-height: 5rem;
+          font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', monospace;
+          font-size: 112%;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.wb-page {
+  margin: 1rem;
+}
+
+.wb-page-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.wb-padded {
+  padding: 1rem;
+}
+
+.wb-zero-pad {
+  padding: 0;
+  margin: 0;
+  border: none;
+}

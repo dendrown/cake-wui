@@ -6,18 +6,9 @@
 ;;;; _/        _/    _/  _/  _/    _/
 ;;;;  _/_/_/  _/    _/  _/    _/  _/_/_/_/
 ;;;;
-;;;; Cake WUI re-frame domino 5: view functions
+;;;; A game front-end to encourage conversation on complex issues
 ;;;;
 ;;;; @copyright 2020 Dennis Drown and Ostrich Ideas
 ;;;; -------------------------------------------------------------------------
-(ns cake-wui.views
-  (:require
-   [re-frame.core :as rf]
-   [cake-wui.subs :as subs]))
+(ns cake-wui.core)
 
-
-;;; --------------------------------------------------------------------------
-(defn main-panel []
-  (let [name (rf/subscribe [::subs/name])]
-    [:div
-     [:h1 "Let's eat " @name]]))

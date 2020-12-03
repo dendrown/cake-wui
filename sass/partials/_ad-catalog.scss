@@ -1,0 +1,37 @@
+.ad-catalog {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &.wb-page {
+    overflow: auto;
+  }
+
+  &.wb-page-header {
+    height: 4rem;
+  }
+
+  &.wb-page-body {
+    position: inherit;
+    position: sticky;
+    overflow: auto;
+
+    .wb-tab-panel-tab-bar {
+      position: inherit;
+      position: sticky;
+    }
+  }
+
+  .wb-flex-panel > .wb-v-scroll-pane-container >
+  .wb-v-scroll-pane-overflow > div {
+    margin-bottom: 8rem;
+  }
+
+  .height-12 {
+    height: 12rem;
+  }
+
+  .adc-width-20 {
+    max-width: 20rem;
+  }
+}

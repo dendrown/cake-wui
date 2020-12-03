@@ -8,11 +8,10 @@
                  [reagent "0.10.0"]
                  [re-frame "1.1.2"]
                  [day8.re-frame/tracing "0.6.0"]
-                 [garden "1.3.10"]
                  [ns-tracker "0.4.0"]]
 
   :plugins [[lein-shadow "0.3.1"]
-            [lein-garden "0.3.0"]
+            [lein-sassc  "0.10.5"]
             [lein-shell "0.5.0"]]
 
   :min-lein-version "2.9.0"
@@ -26,11 +25,10 @@
                                     "resources/public/css"]
 
 
-  :garden {:builds [{:id           "screen"
-                     :source-paths ["src/clj"]
-                     :stylesheet   cake-wui.css/screen
-                     :compiler     {:output-to     "resources/public/css/screen.css"
-                                    :pretty-print? true}}]}
+  :sassc [{:src       "sass/cake.scss"
+         :output-to   "resources/public/css/cake.css"
+         :style       "nested"
+         :import-path "sass"}]
 
   :shadow-cljs {:nrepl {:port 8777}
                 
@@ -102,4 +100,4 @@
    
 }
 
-  :prep-tasks [["garden" "once"]])
+  :prep-tasks [["sassc" "once"]])

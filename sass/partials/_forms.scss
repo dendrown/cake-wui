@@ -1,0 +1,35 @@
+.wb-errors {
+  .wb-error {
+    font-size: 80%;
+    font-style: italic;
+  }
+
+  .error {
+    color: $danger;
+  }
+
+  .warning {
+    color: $orange;
+  }
+
+  .info {
+    color: $info;
+  }
+}
+
+.wb-field-group {
+  margin-bottom: 0.5rem;
+}
+
+.wb-checkbox input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.disabled {
+  color: $grey-light;
+}
+
+.field.is-grouped button,
+.field.is-grouped a {
+  margin-left: 0.5rem;
+}
